@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_F_VUoEwaEfCeYecdJKc1zg" name="MiDiagrama - 1.0-Salim" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_F_VUoEwaEfCeYecdJKc1zg" name="DiagramaProcesoMatricula-Salim" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_F_nBcEwaEfCeYecdJKc1zg" name="Sistema Académico">
       <elements xmi:type="process:Lane" xmi:id="_F_uWMEwaEfCeYecdJKc1zg" name="Matrícula">
         <elements xmi:type="process:StartEvent" xmi:id="_F_4HMEwaEfCeYecdJKc1zg" name="Inicio - Matrículas abiertas" outgoing="_GB3EMEwaEfCeYecdJKc1zg">

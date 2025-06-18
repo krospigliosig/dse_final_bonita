@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_wylDAEc3EfCK3dg5ArjiAA" name="DiagramaProcesoAdmisión" version="2.0" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_wylDAEc3EfCK3dg5ArjiAA" name="DiagramaProcesoAdmisión-Kristopher" version="2.0" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_tDhBYEdlEfCK3dg5ArjiAA" name="Postulante" displayName="">
       <elements xmi:type="process:Task" xmi:id="_i-lmIEwCEfCeYecdJKc1zg" name="Cargar documentos al sistema" outgoing="_i-xzZUwCEfCeYecdJKc1zg" incoming="_i-02sEwCEfCeYecdJKc1zg" actor="_W7OXYEwBEfCoY-Sb8z9hLA">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_i-lmIUwCEfCeYecdJKc1zg" name="" content="" returnTypeFixed="true"/>

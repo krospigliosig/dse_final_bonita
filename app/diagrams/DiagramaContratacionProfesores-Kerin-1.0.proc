@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_MszusEwZEfCeYecdJKc1zg" name="MiDiagrama - 1.0-Kerin" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_MszusEwZEfCeYecdJKc1zg" name="DiagramaContratacionProfesores-Kerin" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_Mtm_8EwZEfCeYecdJKc1zg" name="Sistema Academico">
       <elements xmi:type="process:Lane" xmi:id="_MuNc4EwZEfCeYecdJKc1zg" name="Docente postulante" actor="_A8wyoEwaEfCeYecdJKc1zg">
         <elements xmi:type="process:StartEvent" xmi:id="_MuaRMEwZEfCeYecdJKc1zg" name="Inicio - Convocatoria docente abierta" outgoing="_MwAMoEwZEfCeYecdJKc1zg">
