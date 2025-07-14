@@ -13,5 +13,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.PostulanteInscrito">
+            <fields>
+                <field type="STRING" length="255" name="dni" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="correo_ordinario" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="aprobo_examen" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
