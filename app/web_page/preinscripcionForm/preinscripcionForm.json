@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "bfe8153d-2032-4b7e-9f81-efb6d41c4a6e",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1752476470101,
+  "lastUpdate" : 1752605300934,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -484,7 +484,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.requestInput.link_certificado_estudios"
+                          "value" : "formInput.requestInput.linkCertificadoEstudios"
                         },
                         "required" : {
                           "type" : "constant",
@@ -694,7 +694,7 @@
         "    \"nombre\" : \"\",\r",
         "    \"apellidos\" : \"\",\r",
         "    \"dni\" : \"\",\r",
-        "    \"link_certificado_estudios\" : \"\"\r",
+        "    \"linkCertificadoEstudios\" : \"\"\r",
         "  }\r",
         "}"
       ],

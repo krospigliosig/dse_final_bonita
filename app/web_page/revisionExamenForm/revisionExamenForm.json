@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ab655dc7-4bd5-44ee-87fd-89b237edbd9c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1752477410788,
+  "lastUpdate" : 1752605168553,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -314,7 +314,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!nuevoPostulanteInscrito.correo_ordinario"
+                          "value" : "!nuevoPostulanteInscrito.correoOrdinario"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -326,7 +326,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{nuevoPostulanteInscrito.correo_ordinario}}"
+                          "value" : "{{nuevoPostulanteInscrito.correoOrdinario}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -608,7 +608,7 @@
         "\treturn {",
         "\t\t//map nuevoPostulanteInscrito variable to expected task contract input",
         "\t\tnuevoPostulanteInscritoInput: {",
-        "\t\t\taprobo_examen: $data.nuevoPostulanteInscrito.aprobo_examen !== undefined ? $data.nuevoPostulanteInscrito.aprobo_examen : null",
+        "\t\t\taprobo_examen: $data.nuevoPostulanteInscrito.aproboExamen !== undefined ? $data.nuevoPostulanteInscrito.aproboExamen : null",
         "\t\t}",
         "\t}",
         "}"

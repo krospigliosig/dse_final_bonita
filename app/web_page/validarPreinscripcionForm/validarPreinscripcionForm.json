@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "5031ccf1-6c3d-44c3-98d6-0d3518243d71",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1752476881315,
+  "lastUpdate" : 1752605267798,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -196,7 +196,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!nueva_ficha_inscripcion.dni"
+                          "value" : "!nuevaFichaInscripcion.dni"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -208,7 +208,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{nueva_ficha_inscripcion.dni}}"
+                          "value" : "{{nuevaFichaInscripcion.dni}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -257,7 +257,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!nueva_ficha_inscripcion.nombre"
+                          "value" : "!nuevaFichaInscripcion.nombre"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -269,7 +269,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{nueva_ficha_inscripcion.nombre}}"
+                          "value" : "{{nuevaFichaInscripcion.nombre}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -318,7 +318,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!nueva_ficha_inscripcion.apellidos"
+                          "value" : "!nuevaFichaInscripcion.apellidos"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -330,7 +330,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{nueva_ficha_inscripcion.apellidos}}"
+                          "value" : "{{nuevaFichaInscripcion.apellidos}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -379,7 +379,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!nueva_ficha_inscripcion.link_certificado_estudios"
+                          "value" : "!nuevaFichaInscripcion.linkCertificadoEstudios"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -391,7 +391,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{nueva_ficha_inscripcion.link_certificado_estudios}}"
+                          "value" : "{{nuevaFichaInscripcion.linkCertificadoEstudios}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -456,7 +456,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "nueva_ficha_inscripcion.aprobado"
+                          "value" : "nuevaFichaInscripcion.aprobado"
                         },
                         "required" : {
                           "type" : "constant",
@@ -661,11 +661,11 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.nueva_ficha_inscripcion ){",
+        "if( $data.nuevaFichaInscripcion ){",
         "\treturn {",
         "\t\t//map nueva_ficha_inscripcion variable to expected task contract input",
         "\t\tnueva_ficha_inscripcionInput: {",
-        "\t\t\taprobado: $data.nueva_ficha_inscripcion.aprobado !== undefined ? $data.nueva_ficha_inscripcion.aprobado : null",
+        "\t\t\taprobado: $data.nuevaFichaInscripcion.aprobado !== undefined ? $data.nuevFichaInscripcion.aprobado : null",
         "\t\t}",
         "\t}",
         "}"
@@ -682,7 +682,7 @@
     "nueva_ficha_inscripcion" : {
       "type" : "url",
       "value" : [
-        "../{{context.nueva_ficha_inscripcion_ref.link}}"
+        "../{{context.nuevaFichaInscripcion_ref.link}}"
       ],
       "exposed" : false
     },
