@@ -67,7 +67,7 @@
           <leftOperand xmi:type="expression:Expression" xmi:id="_LDLWAWBzEfCWUNzu3yHYRg" name="preinscripcionAprobada" content="preinscripcionAprobada" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
             <referencedElements xmi:type="process:Data" xmi:id="_MCEnMGBzEfCWUNzu3yHYRg" name="preinscripcionAprobada" dataType="_wylqJkc3EfCK3dg5ArjiAA"/>
           </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_LDLWAmBzEfCWUNzu3yHYRg" name="resultado de validación de ficha" content="resultado de validación de ficha" type="MESSAGE_ID_TYPE" returnType="java.lang.Boolean"/>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_LDLWAmBzEfCWUNzu3yHYRg" name="resultado_de_validacion_de_ficha_mensaje" content="resultado_de_validacion_de_ficha_mensaje" type="MESSAGE_ID_TYPE" returnType="java.lang.Boolean"/>
           <operator xmi:type="expression:Operator" xmi:id="_LDLWA2BzEfCWUNzu3yHYRg" type="ASSIGNMENT"/>
         </messageContent>
       </elements>
@@ -114,7 +114,7 @@
           <condition xmi:type="expression:Expression" xmi:id="_zb1FEkwWEfCeYecdJKc1zg" name="2025/06/20 02:35:27" content="Calendar calendar = GregorianCalendar.getInstance();&#xA;calendar.set(2025, 5,20, 2, 35, 27);&#xA;calendar.getTime();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Date"/>
         </BoundaryIntermediateEvents>
         <formMapping xmi:type="process:FormMapping" xmi:id="_w5HQOkwWEfCeYecdJKc1zg">
-          <targetForm xmi:type="expression:Expression" xmi:id="_ckJrMGGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_Zs0JUGG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_w5HQOUwWEfCeYecdJKc1zg"/>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_w5HQPEwWEfCeYecdJKc1zg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -173,13 +173,13 @@
           <leftOperand xmi:type="expression:Expression" xmi:id="_eo_I4WB8EfCWUNzu3yHYRg" name="postulanteAprobado" content="postulanteAprobado" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
             <referencedElements xmi:type="process:Data" xmi:id="_fI-3kGB8EfCWUNzu3yHYRg" name="postulanteAprobado" dataType="_wylqJkc3EfCK3dg5ArjiAA"/>
           </leftOperand>
-          <rightOperand xmi:type="expression:Expression" xmi:id="_eo_I4mB8EfCWUNzu3yHYRg" name="resultado del examen para alumno" content="resultado del examen para alumno" type="MESSAGE_ID_TYPE" returnType="java.lang.Boolean"/>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_eo_I4mB8EfCWUNzu3yHYRg" name="resultado_del_examen_para_alumno_mensaje" content="resultado_del_examen_para_alumno_mensaje" type="MESSAGE_ID_TYPE" returnType="java.lang.Boolean"/>
           <operator xmi:type="expression:Operator" xmi:id="_eo_I42B8EfCWUNzu3yHYRg" type="ASSIGNMENT"/>
         </messageContent>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_ePvb4GBPEfCBFvHo7M_3FQ" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_npA4YGBPEfCBFvHo7M_3FQ" name="initNuevaFichaInscripcion()" content="def fichaInscripcionVar = new com.company.model.FichaInscripcion()&#xD;&#xA;fichaInscripcionVar.nombre = requestInput?.nombre&#xD;&#xA;fichaInscripcionVar.apellidos = requestInput?.apellidos&#xD;&#xA;fichaInscripcionVar.dni = requestInput?.dni&#xD;&#xA;fichaInscripcionVar.link_certificado_estudios = requestInput?.link_certificado_estudios&#xD;&#xA;return fichaInscripcionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.FichaInscripcion">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_7qseAGBPEfCBFvHo7M_3FQ" name="requestInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_CpOHVGG5EfCKO_get__wlA" name="initNuevaFichaInscripcion()" content="def fichaInscripcionVar = new com.company.model.FichaInscripcion()&#xD;&#xA;fichaInscripcionVar.nombre = nuevaFichaInscripcionInput?.nombre&#xD;&#xA;fichaInscripcionVar.apellidos = nuevaFichaInscripcionInput?.apellidos&#xD;&#xA;fichaInscripcionVar.dni = nuevaFichaInscripcionInput?.dni&#xD;&#xA;fichaInscripcionVar.linkCertificadoEstudios = nuevaFichaInscripcionInput?.linkCertificadoEstudios&#xD;&#xA;return fichaInscripcionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.FichaInscripcion">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_CpOHVWG5EfCKO_get__wlA" name="nuevaFichaInscripcionInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <data xmi:type="process:Data" xmi:id="_Gc4gUGBzEfCWUNzu3yHYRg" name="preinscripcionAprobada" dataType="_wylqJkc3EfCK3dg5ArjiAA">
@@ -192,7 +192,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_c7E1kWB8EfCWUNzu3yHYRg" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_tDsnn0dlEfCK3dg5ArjiAA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Tk5ecGB-EfCWUNzu3yHYRg" name="preinscripcionForm" content="bfe8153d-2032-4b7e-9f81-efb6d41c4a6e" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Tk5ecGB-EfCWUNzu3yHYRg" name="fichaPreinscripcionForm" content="56efc225-1df0-4c6f-bedc-a74a6e628872" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_tDsnoUdlEfCK3dg5ArjiAA">
         <targetForm xmi:type="expression:Expression" xmi:id="_tDsnokdlEfCK3dg5ArjiAA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -275,23 +275,23 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Ds11kFWGEfCzfN033JYwTA" name="postulante" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_tDsno0dlEfCK3dg5ArjiAA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_npARUGBPEfCBFvHo7M_3FQ" name="requestInput" type="COMPLEX" dataReference="nuevaFichaInscripcion">
-          <inputs xmi:type="process:ContractInput" xmi:id="_npARUWBPEfCBFvHo7M_3FQ" name="nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_npARUmBPEfCBFvHo7M_3FQ" name="apellidos"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_npARU2BPEfCBFvHo7M_3FQ" name="dni"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_npARVGBPEfCBFvHo7M_3FQ" name="linkCertificadoEstudios"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_CpGykGG5EfCKO_get__wlA" name="nuevaFichaInscripcionInput" type="COMPLEX" dataReference="nuevaFichaInscripcion">
+          <inputs xmi:type="process:ContractInput" xmi:id="_CpGykWG5EfCKO_get__wlA" name="nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_CpGykmG5EfCKO_get__wlA" name="apellidos"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_CpGyk2G5EfCKO_get__wlA" name="dni"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_CpGylGG5EfCKO_get__wlA" name="linkCertificadoEstudios"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_npARVWBPEfCBFvHo7M_3FQ" expression="requestInput?.nombre != null" errorMessage="nombre is mandatory for FichaInscripcion" name="mandatory_requestInput_nombre">
-          <inputNames>requestInput</inputNames>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_CpOHUGG5EfCKO_get__wlA" expression="nuevaFichaInscripcionInput?.nombre != null" errorMessage="nombre is mandatory for FichaInscripcion" name="mandatory_nuevaFichaInscripcionInput_nombre">
+          <inputNames>nuevaFichaInscripcionInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_npARVmBPEfCBFvHo7M_3FQ" expression="requestInput?.apellidos != null" errorMessage="apellidos is mandatory for FichaInscripcion" name="mandatory_requestInput_apellidos">
-          <inputNames>requestInput</inputNames>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_CpOHUWG5EfCKO_get__wlA" expression="nuevaFichaInscripcionInput?.apellidos != null" errorMessage="apellidos is mandatory for FichaInscripcion" name="mandatory_nuevaFichaInscripcionInput_apellidos">
+          <inputNames>nuevaFichaInscripcionInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_npARV2BPEfCBFvHo7M_3FQ" expression="requestInput?.dni != null" errorMessage="dni is mandatory for FichaInscripcion" name="mandatory_requestInput_dni">
-          <inputNames>requestInput</inputNames>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_CpOHUmG5EfCKO_get__wlA" expression="nuevaFichaInscripcionInput?.dni != null" errorMessage="dni is mandatory for FichaInscripcion" name="mandatory_nuevaFichaInscripcionInput_dni">
+          <inputNames>nuevaFichaInscripcionInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_npARWGBPEfCBFvHo7M_3FQ" expression="requestInput?.linkCertificadoEstudios != null" errorMessage="linkCertificadoEstudios is mandatory for FichaInscripcion" name="mandatory_requestInput_linkCertificadoEstudios">
-          <inputNames>requestInput</inputNames>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_CpOHU2G5EfCKO_get__wlA" expression="nuevaFichaInscripcionInput?.linkCertificadoEstudios != null" errorMessage="linkCertificadoEstudios is mandatory for FichaInscripcion" name="mandatory_nuevaFichaInscripcionInput_linkCertificadoEstudios">
+          <inputNames>nuevaFichaInscripcionInput</inputNames>
         </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_tDsnkEdlEfCK3dg5ArjiAA">
@@ -325,8 +325,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_wpZW8GBTEfCBFvHo7M_3FQ" name="nuevaFichaInscripcion" content="nuevaFichaInscripcion" type="TYPE_VARIABLE" returnType="com.company.model.FichaInscripcion">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wpZW8WBTEfCBFvHo7M_3FQ" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_wpZW8mBTEfCBFvHo7M_3FQ" name="nueva_ficha_inscripcionInput.aprobado" content="nuevaFichaInscripcionInput?.aprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_swYwoGGpEfCYb-zAQJYMXg" name="nuevaFichaInscripcionInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_wpZW8mBTEfCBFvHo7M_3FQ" name="nuevaFichaInscripcionInput.aprobado" content="nuevaFichaInscripcionInput?.aprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_oKLkEGG1EfCKO_get__wlA" name="nuevaFichaInscripcionInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_wpZW9GBTEfCBFvHo7M_3FQ" type="JAVA_METHOD" expression="setAprobado">
               <inputTypes>java.lang.Boolean</inputTypes>
@@ -336,8 +336,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_2pqlYWBVEfCBFvHo7M_3FQ" name="fichaAprobada" content="fichaAprobada" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:Data" xmi:id="_3eZN8GBVEfCBFvHo7M_3FQ" name="fichaAprobada" dataType="_wylqJkc3EfCK3dg5ArjiAA"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_2pqlYmBVEfCBFvHo7M_3FQ" name="getAprobado()" content="nuevaFichaInscripcion.aprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7b1T4GBVEfCBFvHo7M_3FQ" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_2pqlYmBVEfCBFvHo7M_3FQ" name="getAprobado()" content="nuevaFichaInscripcionInput?.aprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_85iVwGG6EfCKO_get__wlA" name="nuevaFichaInscripcionInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_2pqlY2BVEfCBFvHo7M_3FQ" type="ASSIGNMENT"/>
           </operations>
@@ -392,7 +392,7 @@
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_tllgaUwKEfCeYecdJKc1zg">
             <inputs xmi:type="process:ContractInput" xmi:id="_KItNoGB6EfCWUNzu3yHYRg" name="nuevoPostulanteInscritoInput" type="COMPLEX" dataReference="nuevoPostulanteInscrito" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_KItNoWB6EfCWUNzu3yHYRg" name="aprobo_examen" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_KItNoWB6EfCWUNzu3yHYRg" name="aproboExamen" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_tllgbEwKEfCeYecdJKc1zg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -440,7 +440,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_NL8UkVspEfCxbc2wlXf4uA" name="dniFicha" content="dniFicha" type="TYPE_VARIABLE" returnType="java.lang.Long">
               <referencedElements xmi:type="process:Data" xmi:id="_Xg4IEFspEfCxbc2wlXf4uA" name="dniFicha" dataType="_wylqKUc3EfCK3dg5ArjiAA"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_NL8UklspEfCxbc2wlXf4uA" name="ficha de inscripción" content="ficha de inscripción" type="MESSAGE_ID_TYPE"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_NL8UklspEfCxbc2wlXf4uA" name="ficha_de_inscripcion_mensaje" content="ficha_de_inscripcion_mensaje" type="MESSAGE_ID_TYPE"/>
             <operator xmi:type="expression:Operator" xmi:id="_NL8Uk1spEfCxbc2wlXf4uA" type="ASSIGNMENT"/>
           </messageContent>
         </elements>
@@ -498,8 +498,8 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_a8_78GBTEfCBFvHo7M_3FQ" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_aDpSEmBTEfCBFvHo7M_3FQ" name="recuperarFichaInscripcion()" content="def fichaInscripcionRequest = fichaInscripcionDAO.findByDni(dniFicha)&#xD;&#xA;&#xD;&#xA;return fichaInscripcionRequest" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.FichaInscripcion">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_4YAL8GBUEfCBFvHo7M_3FQ" name="fichaInscripcionDAO" content="fichaInscripcionDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.FichaInscripcionDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_4YAL8WBUEfCBFvHo7M_3FQ" name="dniFicha" dataType="_wylqKUc3EfCK3dg5ArjiAA"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_22KeEGG6EfCKO_get__wlA" name="fichaInscripcionDAO" content="fichaInscripcionDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.FichaInscripcionDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_22KeEWG6EfCKO_get__wlA" name="dniFicha" dataType="_wylqKUc3EfCK3dg5ArjiAA"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_aDpSE2BTEfCBFvHo7M_3FQ" type="ASSIGNMENT"/>
           </operations>
@@ -527,9 +527,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_I34RMWB1EfCWUNzu3yHYRg" name="nuevoPostulanteInscrito" content="nuevoPostulanteInscrito" type="TYPE_VARIABLE" returnType="com.company.model.PostulanteInscrito">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KrXBAGB1EfCWUNzu3yHYRg" name="nuevoPostulanteInscrito" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.PostulanteInscrito"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_I34RMmB1EfCWUNzu3yHYRg" name="habilitar_para_examen()" content="def _nuevoPostulanteInscrito = postulanteInscritoDAO.newInstance()&#xD;&#xA;_nuevoPostulanteInscrito.dni = nuevaFichaInscripcion.dni&#xD;&#xA;&#xD;&#xA;def nuevo_correo_admision = nuevaFichaInscripcion.nombre&#xD;&#xA;nuevo_correo_admision += &quot;_ordinario@unsa.edu.pe&quot;&#xD;&#xA;_nuevoPostulanteInscrito.correo_ordinario = nuevo_correo_admision&#xD;&#xA;&#xD;&#xA;return _nuevoPostulanteInscrito&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.PostulanteInscrito">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_baGu4GB4EfCWUNzu3yHYRg" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_baGu4WB4EfCWUNzu3yHYRg" name="postulanteInscritoDAO" content="postulanteInscritoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PostulanteInscritoDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_I34RMmB1EfCWUNzu3yHYRg" name="habilitar_para_examen()" content="def _nuevoPostulanteInscrito = postulanteInscritoDAO.newInstance()&#xD;&#xA;_nuevoPostulanteInscrito.dni = nuevaFichaInscripcion.dni&#xD;&#xA;&#xD;&#xA;def nuevo_correo_admision = nuevaFichaInscripcion.nombre&#xD;&#xA;nuevo_correo_admision += &quot;_ordinario@unsa.edu.pe&quot;&#xD;&#xA;_nuevoPostulanteInscrito.correoOrdinario = nuevo_correo_admision&#xD;&#xA;&#xD;&#xA;return _nuevoPostulanteInscrito&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.PostulanteInscrito">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JmOLIGG4EfCKO_get__wlA" name="nuevaFichaInscripcion" dataType="_wylqLkc3EfCK3dg5ArjiAA" className="com.company.model.FichaInscripcion"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_JmOLIWG4EfCKO_get__wlA" name="postulanteInscritoDAO" content="postulanteInscritoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PostulanteInscritoDAO" returnTypeFixed="true"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_I34RM2B1EfCWUNzu3yHYRg" type="ASSIGNMENT"/>
           </operations>
@@ -563,7 +563,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_4zdLUWB0EfCWUNzu3yHYRg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_wylDFEc3EfCK3dg5ArjiAA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_cnFqcGGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Z0qdwGG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_wylqEEc3EfCK3dg5ArjiAA">
         <targetForm xmi:type="expression:Expression" xmi:id="_wylqEUc3EfCK3dg5ArjiAA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -775,7 +775,7 @@
         </events>
       </elements>
       <formMapping xmi:type="process:FormMapping" xmi:id="_USee0EdnEfCK3dg5ArjiAA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ciZXsGGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ZpERwGG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_USee0kdnEfCK3dg5ArjiAA">
         <targetForm xmi:type="expression:Expression" xmi:id="_USee00dnEfCK3dg5ArjiAA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -898,7 +898,7 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_sqw3AWB7EfCWUNzu3yHYRg" name="dniPostulante" content="dniPostulante" type="TYPE_VARIABLE">
               <referencedElements xmi:type="process:Data" xmi:id="_te0xMGB7EfCWUNzu3yHYRg" name="dniPostulante" dataType="_wylqK0c3EfCK3dg5ArjiAA"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_sqw3AmB7EfCWUNzu3yHYRg" name="resultados del examen de admision" content="resultados del examen de admision" type="MESSAGE_ID_TYPE"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_sqw3AmB7EfCWUNzu3yHYRg" name="resultados_del_examen_de_admision_mensaje" content="resultados_del_examen_de_admision_mensaje" type="MESSAGE_ID_TYPE"/>
             <operator xmi:type="expression:Operator" xmi:id="_sqw3A2B7EfCWUNzu3yHYRg" type="ASSIGNMENT"/>
           </messageContent>
         </elements>
@@ -932,7 +932,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_jjO0OEwWEfCeYecdJKc1zg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_jjO0N0wWEfCeYecdJKc1zg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_s7Kx5WB4EfCWUNzu3yHYRg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_ck2OwGGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ZuwDAGG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_s7Kx5GB4EfCWUNzu3yHYRg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_s7Kx52B4EfCWUNzu3yHYRg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -947,7 +947,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_X7x4qEwFEfCeYecdJKc1zg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_X7x4p0wFEfCeYecdJKc1zg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_tc4X2WB4EfCWUNzu3yHYRg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_ck2OwWGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ZuwDAWG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_tc4X2GB4EfCWUNzu3yHYRg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_tc4X22B4EfCWUNzu3yHYRg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -982,7 +982,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_LMKZSGB7EfCWUNzu3yHYRg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_LMKZR2B7EfCWUNzu3yHYRg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_sPvqyWCCEfCWUNzu3yHYRg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_ck2OwmGsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ZuwDAmG6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_sPvqyGCCEfCWUNzu3yHYRg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_sPvqy2CCEfCWUNzu3yHYRg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -995,7 +995,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_F2GeEWB8EfCWUNzu3yHYRg" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_EH8hz0wFEfCeYecdJKc1zg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ck2Ow2GsEfCYb-zAQJYMXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ZuwDA2G6EfCKO_get__wlA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_EH9I0EwFEfCeYecdJKc1zg">
         <targetForm xmi:type="expression:Expression" xmi:id="_EH9I0UwFEfCeYecdJKc1zg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
