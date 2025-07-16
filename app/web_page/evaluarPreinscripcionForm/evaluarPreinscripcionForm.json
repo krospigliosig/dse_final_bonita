@@ -1,29 +1,139 @@
 {
-  "id" : "preinscripcionForm",
-  "name" : "preinscripcionForm",
+  "id" : "evaluarPreinscripcionForm",
+  "name" : "evaluarPreinscripcionForm",
   "type" : "form",
-  "uuid" : "bfe8153d-2032-4b7e-9f81-efb6d41c4a6e",
+  "uuid" : "c54462ef-2301-42f9-a2ce-f4beefbc7eb5",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1752654996941,
+  "lastUpdate" : 1752661751404,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "85a8069d-a562-4a80-bc1f-11726ceb303e",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Validación de ficha de preinscripción"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "fc848c4d-ece5-44ab-9190-0b38b25464bb",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<ul>\n<li>Asegúrese de que los datos mostrados sean correctos.</li>\n<li>Si detecta algún patrón sospechoso en el certificado de estudios (notas fuera de contexto, fechas que no concuerdan), rechace la ficha de preinscripción.</li>\n</ul>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                }
+              },
+              "reference" : "ad9ffc78-e411-48f6-80db-618e5e12160a",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "b32d8b81-e70a-4172-a051-1ac1eb712c92",
+        "propertyValues" : { },
+        "reference" : "50466278-3f33-4866-9ae4-8b604a11778a",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,7 +142,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5bd98cb5-3694-482e-ba26-ccd09eeddc63",
+          "reference" : "ce8ef12d-cf1b-47af-a304-cb20153993d9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -52,7 +162,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 2"
+                    "value" : "Level 4"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -60,11 +170,11 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Preinscripción al proceso de admisión 2025-A"
+                    "value" : "Validar nueva ficha de preinscripcion"
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -75,62 +185,10 @@
                     "value" : false
                   }
                 },
-                "reference" : "d4b41ed9-a278-4f40-a3b4-0c6b5b7a2d3d",
+                "reference" : "2c76dcea-049f-497a-b694-77df559e402d",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "<ul>\n<li>Ingrese sus nombres y apellidos en MAYÚSCULAS.</li>\n<li>El certificado de estudios debe subirse en formato PDF.</li>\n</ul>"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "6c9b960c-fef0-46cf-a384-77158c37a79a",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -159,7 +217,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5c2b1692-d1ad-4ca9-aef7-cf24f441f43d",
+                "reference" : "eb6e205f-a67c-4c95-952b-61196e368e42",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -173,83 +231,54 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!nuevaFichaInscripcion.dni"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "DNI"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{nuevaFichaInscripcion.dni}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.nuevaFichaInscripcionInput.dni"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "maxLength" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : 4
                         }
                       },
-                      "reference" : "68b805ed-b1da-4109-92f5-696420c11a13",
+                      "reference" : "8ce7d540-c345-466c-9eff-6c2ec8d21d6e",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -263,83 +292,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!nuevaFichaInscripcion.nombre"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Nombre"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{nuevaFichaInscripcion.nombre}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.nuevaFichaInscripcionInput.nombre"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "0c8f97a4-b4d8-41d5-97e2-16943b81d090",
+                      "reference" : "da722450-f9d6-454b-8dcb-24887113881c",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -353,83 +341,115 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!nuevaFichaInscripcion.apellidos"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Apellidos"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{nuevaFichaInscripcion.apellidos}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.nuevaFichaInscripcionInput.apellidos"
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         },
-                        "required" : {
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        }
+                      },
+                      "reference" : "8d76779a-d1ba-4f7f-823d-0c3ac777c33d",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!nuevaFichaInscripcion.linkCertificadoEstudios"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Certificado de estudios"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{nuevaFichaInscripcion.linkCertificadoEstudios}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "maxLength" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : 4
                         }
                       },
-                      "reference" : "1f9bca6c-c5c1-49e8-9b5e-b49d5cfa1497",
+                      "reference" : "023adc07-b584-4ec6-9bbe-a6eb64270dd9",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -451,32 +471,17 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Certificado de estudios"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
+                          "value" : "La ficha de preinscripción es válida (deje sin marcar si no es así)"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -484,42 +489,20 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.nuevaFichaInscripcionInput.linkCertificadoEstudios"
+                          "value" : "nuevaFichaInscripcion.aprobado"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "208973ef-6b6c-44ce-ab1a-e4b6f43177cc",
+                      "reference" : "b85dd8d1-9f53-4f66-b2ab-daee42096752",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
@@ -553,7 +536,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Enviar preinscripción"
+                    "value" : "Aprobar ficha de preinscripción"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -580,7 +563,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -622,7 +605,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "508758d7-73d1-44d4-b8b1-4335617912e0",
+                "reference" : "ab3cd591-2e94-48f6-bdc2-65147725e6c8",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -672,9 +655,17 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
-                "reference" : "fe269e56-f954-4b0a-b743-a49419057ee9",
+                "reference" : "0c902247-3ffd-4483-b312-bda198c65283",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -686,17 +677,17 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "nuevaFichaInscripcion" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"nuevaFichaInscripcionInput\" : {\r",
-        "    \"nombre\" : \"\",\r",
-        "    \"apellidos\" : \"\",\r",
-        "    \"dni\" : \"\",\r",
-        "    \"linkCertificadoEstudios\" : \"\"\r",
-        "  }\r",
-        "}"
+        "../{{context.nuevaFichaInscripcion_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -718,25 +709,44 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tnuevaFichaInscripcionInput: $data.formInput.nuevaFichaInscripcionInput",
+        "if( $data.nuevaFichaInscripcion ){",
+        "\treturn {",
+        "\t\t//map nuevaFichaInscripcion variable to expected task contract input",
+        "\t\tnuevaFichaInscripcionInput: {",
+        "\t\t\taprobado: $data.nuevaFichaInscripcion.aprobado !== undefined ? $data.nuevaFichaInscripcion.aprobado : null",
+        "\t\t}",
+        "\t}",
         "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "eb88c09b-2c64-4e5a-a3a5-b8205d007f3c",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "8d9b302b-b1c5-4d0d-ae06-1f503d5993f6",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "ae435687-af62-4764-8db5-dc8dbfbca239",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "3730e895-38ec-4ef2-8bbe-f7cb64155573",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
