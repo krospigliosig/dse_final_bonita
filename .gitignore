@@ -8,3 +8,5 @@ pom.xml.versionsBackup
 node/
 node_modules/
 /.vscode
+*/__pycache__/
+*.sqlite3
