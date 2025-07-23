@@ -2,9 +2,9 @@
   "id" : "newForm",
   "name" : "newForm",
   "type" : "form",
-  "uuid" : "bb1843d0-b389-4b90-95e0-caebd4b6dd6d",
+  "uuid" : "8ef350c6-00f1-4477-99e8-164ddb507160",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751886125264,
+  "lastUpdate" : 1753252949421,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "1765665e-ef42-4d39-8811-1f75aa44b444",
+        "reference" : "de4c99dd-fcb0-4043-af2e-4077da50843e",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "fb4805b9-5320-4836-ab62-0c38e7e4690b",
+              "reference" : "78337cba-6aac-494a-85ed-83d7559e2d5c",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "2d42e3aa-85bb-44f7-b390-58c9abe91055",
+              "reference" : "307e861a-d0e4-4ff2-a242-dacbc8631b52",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9e6007e7-77df-45c7-ab3e-694f894c4104",
+        "reference" : "c3c3b6dd-339e-41c6-af2a-925b3362bcce",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,10 +126,276 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "aa0f89a2-2b09-4317-b596-abf5356202bd",
+          "reference" : "87a8929b-bbe2-40c6-8586-0d9ce5c6896a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Datos Transaccion"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "34f83140-207b-4d3c-82fc-94339b37ebff",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "069da100-4b3e-4caa-ba36-c7cd8fb1d741",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Dni"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "datosTransaccion.dni"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "7b64dd24-be5b-4256-9587-c006a40cb7f3",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Monto Total"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "datosTransaccion.montoTotal"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "209f7deb-c6a7-406a-a915-1ba03beb4dc7",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Servicio"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "datosTransaccion.servicio"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "c7bb695a-b904-4ac8-8695-20383d2bee7a",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ]
+                ]
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -205,7 +471,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "88593ed7-a6d0-423b-b94d-b5cea549400c",
+                "reference" : "a541d288-ef96-4079-a89f-c51163437cd2",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -257,7 +523,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5c01c906-78e6-4cf7-a9c4-29e7915a4e6c",
+                "reference" : "a0665445-24f5-40c4-9413-a280e001abb2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -294,8 +560,15 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "",
+        "if( $data.datosTransaccion ){",
+        "\treturn {",
+        "\t\t//map datosTransaccion variable to expected task contract input",
+        "\t\tdatosTransaccionInput: {",
+        "\t\t\tdni: $data.datosTransaccion.dni !== undefined ? $data.datosTransaccion.dni : null,",
+        "\t\t\tmontoTotal: $data.datosTransaccion.montoTotal !== undefined ? $data.datosTransaccion.montoTotal : null,",
+        "\t\t\tservicio: $data.datosTransaccion.servicio !== undefined ? $data.datosTransaccion.servicio : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -304,6 +577,13 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "datosTransaccion" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.datosTransaccion_ref.link}}"
       ],
       "exposed" : false
     },
@@ -317,14 +597,14 @@
   },
   "assets" : [
     {
-      "id" : "dbf43ad6-249d-4a05-9dc9-5c4c3d3b60bc",
+      "id" : "d36833df-fd38-40f3-bb7c-5820141c9378",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "bd45dcc8-4b05-4c90-b76a-ac7ca9f2957d",
+      "id" : "673eb034-4d80-4141-9b6f-8aa0877ed04c",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
