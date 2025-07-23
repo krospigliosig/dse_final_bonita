@@ -1,0 +1,54 @@
+definitionVersion=1.0.0
+implementation.classname=com.example.bonita.connectors.rabbitmq.RabbitMQConnector
+icon=rabbitmq.png
+category=Messaging
+
+inputs=[
+    {
+        name="host",
+        type="java.lang.String",
+        mandatory=true,
+        description="RabbitMQ server host"
+    },
+    {
+        name="port",
+        type="java.lang.String",
+        mandatory=true,
+        defaultValue="5672",
+        description="RabbitMQ server port"
+    },
+    {
+        name="username",
+        type="java.lang.String",
+        mandatory=false,
+        defaultValue="guest",
+        description="RabbitMQ username"
+    },
+    {
+        name="password",
+        type="java.lang.String",
+        mandatory=false,
+        defaultValue="guest",
+        description="RabbitMQ password"
+    },
+    {
+        name="queueName",
+        type="java.lang.String",
+        mandatory=true,
+        description="Queue name to publish to"
+    },
+    {
+        name="message",
+        type="java.lang.String",
+        mandatory=true,
+        description="Message to send"
+    }
+]
+
+outputs=[
+    {
+        name="success",
+        type="java.lang.Boolean",
+        description="True if message was sent successfully"
+    }
+]
