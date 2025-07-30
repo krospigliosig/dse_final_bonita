@@ -20,6 +20,8 @@ Modelar y automatizar los principales procesos de negocio de la UNSA mediante la
 ### Visión general de la aplicación BPM
 La aplicación desarrollada en BonitaSoft cuenta con:
 - Una **página principal de aplicación (Application Page)** con navegación hacia los procesos disponibles.
+  <img width="1280" height="553" alt="image" src="https://github.com/user-attachments/assets/6a75be49-23b8-450b-ac3a-876ae5eb24e4" />
+
 - Un **menú organizado** para acceder a:
   - Matrícula de estudiantes
   - Admisión universitaria
