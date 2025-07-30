@@ -1,0 +1,341 @@
+{
+  "id" : "inscribirseProcesoAdmisionApp",
+  "name" : "inscribirseProcesoAdmisionApp",
+  "type" : "page",
+  "uuid" : "2eb3470b-7d8f-42b4-934d-62fd18f46bc1",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1753856482150,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Inscribirse al proceso de admisión {{procesoAdmisionNombre}}"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 1"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "867f94a6-e61e-47c2-a2a7-494aa169e1fc",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Tenga en cuenta que:\n<ul>\n<li>Solo se permite una inscripción por proceso de admisión</li>\n<li>Los documentos deben ser válidos a día de hoy {{fechaActual}}\n</li>\n</ul>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "ec6aaa80-db3f-4c33-ba32-bd87ff657b9a",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "5e65c073-a541-493e-b092-eb0d6a4da791",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "81a2720a-48da-4c46-a4e8-f12ea64320f1",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "fragment",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "5d772aab-1dda-42f9-b396-7379a1c23bfc",
+                "hasValidationError" : false,
+                "id" : "subirDatosPreinscripcion",
+                "binding" : {
+                  "dataExt" : "nuevaFichaInscripcion"
+                }
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Aceptar"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "POST"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation",
+                    "value" : "../API/bpm/process/{{processDefinitionInfoLong}}/instantiation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "nuevaFichaInscripcion"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "bf1987f9-97bd-4f81-a36c-4e6a92fb8bf3",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "procesoAdmisionNombre" : {
+      "type" : "expression",
+      "value" : [
+        "const hoy = new Date();\r",
+        "const año = hoy.getFullYear();\r",
+        "const mes = hoy.getMonth() + 1; // enero = 0\r",
+        "\r",
+        "let procAdmision = \"\";\r",
+        "\r",
+        "if (mes <= 6) {\r",
+        "  procAdmision = `${año}-A`;\r",
+        "} else {\r",
+        "  procAdmision = `${año}-B`;\r",
+        "}\r",
+        "\r",
+        "return procAdmision;"
+      ],
+      "exposed" : false
+    },
+    "nuevaFichaInscripcion" : {
+      "type" : "json",
+      "value" : [
+        "{}"
+      ],
+      "exposed" : false
+    },
+    "processDefinitionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?p=0&c=100&o=version%20DESC&f=name=FichaInscripcion"
+      ],
+      "exposed" : false
+    },
+    "fechaActual" : {
+      "type" : "expression",
+      "value" : [
+        "var today = new Date();\r",
+        "var dd = String(today.getDate()).padStart(2, '0');\r",
+        "var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!\r",
+        "var yyyy = today.getFullYear();\r",
+        "\r",
+        "today = dd + '/' + mm + '/' + yyyy;\r",
+        "return today;"
+      ],
+      "exposed" : false
+    },
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/unusedId"
+      ],
+      "exposed" : false
+    },
+    "processDefinitionInfoLong" : {
+      "type" : "expression",
+      "value" : [
+        "return Number($data.processDefinitionInfo[0].dni);"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "1f32d668-01ba-4b2a-8eeb-6824d9e394e7",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "02dd5172-3433-403d-bafd-c7ecfc3b3dab",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

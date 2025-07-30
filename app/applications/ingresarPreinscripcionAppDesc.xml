@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="ingresar-preinscripcion" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="ingresar-preinscripcion" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Ingresar Preinscripción</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_inscribirseProcesoAdmisionApp" token="ingresar-preinscripcion"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="ingresar-preinscripcion">
+                <displayName>Ingresar preinscripción</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="evaluar-examenes-admision" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="evaluar-examenes-admision" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Evaluar exámenes de admisión</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_evaluarExamenesApp" token="evaluar-examenes-admision"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="evaluar-examenes-admision">
+                <displayName>Evaluar exámenes</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
