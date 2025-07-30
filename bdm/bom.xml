@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.ExamenAdmision">
+            <fields>
+                <field type="STRING" length="255" name="dniPostulante" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="linkExamen" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="notaExamen" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.FichaInscripcion">
             <fields>
+                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="apellidos" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="linkCertificadoEstudios" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aprobado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
@@ -18,6 +27,17 @@
                 <field type="STRING" length="255" name="dni" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="correoOrdinario" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aproboExamen" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.TransaccionInfo">
+            <fields>
+                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="montoTotal" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="servicio" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="estadoTransaccion" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

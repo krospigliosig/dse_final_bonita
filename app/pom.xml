@@ -102,6 +102,12 @@
       <artifactId>bonita-actorfilter-initiator-manager</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.company.connector</groupId>
+      <artifactId>connector-rabbitmq</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

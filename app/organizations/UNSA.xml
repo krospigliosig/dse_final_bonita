@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="helen.kelly">
+      <firstName>Helen</firstName>
+      <lastName>Kelly</lastName>
+      <title>Mrs</title>
+      <jobTitle>Teacher</jobTitle>
+      <manager>william.jobs</manager>
+      <personalData/>
+      <professionalData>
+        <email>helen.kelly@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="rai.mendoza">
+      <firstName>Rai</firstName>
+      <lastName>Mendoza</lastName>
+      <title></title>
+      <jobTitle>Student</jobTitle>
+      <manager>helen.kelly</manager>
+      <personalData/>
+      <professionalData>
+        <email></email>
+        <phoneNumber></phoneNumber>
+        <faxNumber></faxNumber>
+        <building></building>
+        <address></address>
+        <zipCode></zipCode>
+        <city></city>
+        <state></state>
+        <country></country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="jan.fisher">
+      <firstName>Jan</firstName>
+      <lastName>Fisher</lastName>
+      <title>Mr</title>
+      <jobTitle>Notary</jobTitle>
+      <manager>favio.riviera</manager>
+      <personalData/>
+      <professionalData>
+        <email>jan.fisher@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="giovanna.almeida">
+      <firstName>Giovanna</firstName>
+      <lastName>Almeida</lastName>
+      <title>Mrs</title>
+      <jobTitle>Community manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <personalData/>
+      <professionalData>
+        <email>giovanna.almeida@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="paola.neyra">
+      <firstName>Paola</firstName>
+      <lastName>Neyra</lastName>
+      <title>Mrs</title>
+      <jobTitle>Graphic designer</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="evaluador_admision">
+      <displayName>Evaluador de examen de admisi&#xf3;n</displayName>
+    </role>
+    <role name="community_manager">
+      <displayName>Community Manager</displayName>
+    </role>
+    <role name="postulante">
+      <displayName>Postulante</displayName>
+    </role>
+    <role name="evaluador_documentos">
+      <displayName>Evaluador de documentos de preinscripci&#xf3;n</displayName>
+    </role>
+    <role name="editor">
+      <displayName>Editor</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="unsa">
+      <displayName>Universidad Nacional de San Agust&#xed;n</displayName>
+      <description>This group represents the acme department of the ACME organization</description>
+    </group>
+    <group name="rectorado" parentPath="/unsa">
+      <displayName>Rectorado</displayName>
+      <description>This group represents the human resources department of the ACME organization</description>
+    </group>
+    <group name="vicerrectorado_acad&#xe9;mico" parentPath="/unsa">
+      <displayName>Vicerrectorado Acad&#xe9;mico</displayName>
+      <description>This group represents the production department of the ACME organization</description>
+    </group>
+    <group name="direccion_admision" parentPath="/unsa/vicerrectorado_acad&#xe9;mico">
+      <displayName>Direcci&#xf3;n de Admisi&#xf3;n</displayName>
+      <description>This group represents the research &amp; development department of the ACME organization</description>
+    </group>
+    <group name="postulantes">
+      <displayName>Postulantes</displayName>
+    </group>
+    <group name="oficina_comunicaci&#xf3;n_imagen_institucional" parentPath="/unsa/rectorado">
+      <displayName>Oficina de Comunicaci&#xf3;n e Imagen Institucional</displayName>
+    </group>
+    <group name="banco">
+      <displayName>Banco</displayName>
+    </group>
+    <group name="unidad_medios_comunicacion" parentPath="/unsa/rectorado/oficina_comunicaci&#xf3;n_imagen_institucional">
+      <displayName>Unidad de Medios de Comunicaci&#xf3;n</displayName>
+    </group>
+    <group name="unidad_diseno_grafico_publicaciones" parentPath="/unsa/rectorado/oficina_comunicaci&#xf3;n_imagen_institucional">
+      <displayName>Unidad de Dise&#xf1;o Gr&#xe1;fico y Publicaciones</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>evaluador_admision</roleName>
+      <groupName>direccion_admision</groupName>
+      <groupParentPath>/unsa/vicerrectorado_acad&#xe9;mico</groupParentPath>
+    </membership>
+    <membership>
+      <userName>rai.mendoza</userName>
+      <roleName>postulante</roleName>
+      <groupName>postulantes</groupName>
+    </membership>
+    <membership>
+      <userName>jan.fisher</userName>
+      <roleName>evaluador_documentos</roleName>
+      <groupName>direccion_admision</groupName>
+      <groupParentPath>/unsa/vicerrectorado_acad&#xe9;mico</groupParentPath>
+    </membership>
+    <membership>
+      <userName>giovanna.almeida</userName>
+      <roleName>community_manager</roleName>
+      <groupName>unidad_medios_comunicacion</groupName>
+      <groupParentPath>/unsa/rectorado/oficina_comunicaci&#xf3;n_imagen_institucional</groupParentPath>
+    </membership>
+    <membership>
+      <userName>paola.neyra</userName>
+      <roleName>editor</roleName>
+      <groupName>unidad_diseno_grafico_publicaciones</groupName>
+      <groupParentPath>/unsa/rectorado/oficina_comunicaci&#xf3;n_imagen_institucional</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
