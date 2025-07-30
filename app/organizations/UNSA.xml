@@ -157,9 +157,6 @@
     <group name="oficina_comunicaci&#xf3;n_imagen_institucional" parentPath="/unsa/rectorado">
       <displayName>Oficina de Comunicaci&#xf3;n e Imagen Institucional</displayName>
     </group>
-    <group name="banco">
-      <displayName>Banco</displayName>
-    </group>
     <group name="unidad_medios_comunicacion" parentPath="/unsa/rectorado/oficina_comunicaci&#xf3;n_imagen_institucional">
       <displayName>Unidad de Medios de Comunicaci&#xf3;n</displayName>
     </group>
